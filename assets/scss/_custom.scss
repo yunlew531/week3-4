@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
 }
 
 $primary: #AA0601;
@@ -8,6 +9,7 @@ $black: #000;
 $black_100: #212529;
 $red_100: #9F1213;
 $red_200: #650300;
+$red_300: #FBF2F2;
 $gray_100: #707070;
 
 $container-width: 1320px;
@@ -20,6 +22,7 @@ $colors: (
   "black_100": $black_100,
   "red_100": $red_100,
   "red_200": $red_200,
+  "red_300": $red_300,
   "gray_100": $gray_100,
 );
 
@@ -49,6 +52,7 @@ $spacing-sizes: (
   0: 0,
   1px: 0.0625,
   2px: 0.125,
+  6px: 0.375,
   1: 0.25,
   2: 0.5,
   3: 0.75,
@@ -74,6 +78,10 @@ $spacing-sizes: (
   max-width: $container-width;
   padding: 0 $container-padding;
   margin: 0 auto;
+}
+
+.fw-bold {
+  font-weight: bold;
 }
 
 @each $colorKey, $color in $colors {

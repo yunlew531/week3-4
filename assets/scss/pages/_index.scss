@@ -1,3 +1,30 @@
-.index-title {
-  font-size: 100px;
+.index-wrap {
+  .banner-section {
+    background: url(../images/home-header.png) no-repeat center;
+    background-size: cover;
+    text-align: right;
+    padding: 296px;
+  }
+
+  .intro-section {
+    .section-title {
+      text-align: center;
+    }
+    .intro-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .intro-item {
+        width: 23.61%;
+        .img-group {
+          text-align: center;
+          img {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
 }
