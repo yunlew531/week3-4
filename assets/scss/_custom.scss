@@ -2,16 +2,36 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+$primary: #AA0601;
+$white: #fff;
+$black: #000;
+$black_100: #212529;
+$red_100: #9F1213;
+$red_200: #650300;
+$gray_100: #707070;
+
 $container-width: 1320px;
 $container-padding: 12px;
 
 $colors: (
-  "primary": #AA0601,
-  "white": #fff,
-  "black": #000,
-  "black_100": #212529,
-  "red_100": #9F1213,
-  "red_200": #650300,
+  "primary": $primary,
+  "white": $white,
+  "black": $black,
+  "black_100": $black_100,
+  "red_100": $red_100,
+  "red_200": $red_200,
+  "gray_100": $gray_100,
+);
+
+$font-sizes: (
+  "1": 64px,
+  "2": 48px,
+  "3": 36px,
+  "4": 24px,
+  "5": 20px,
+  "6": 18px,
+  "7": 16px,
+  "8": 14px,
 );
 
 $spacing-types: (
@@ -52,5 +72,52 @@ $spacing-sizes: (
 
 .container {
   max-width: $container-width;
-  padding: $container-padding;
+  padding: 0 $container-padding;
+  margin: 0 auto;
+}
+
+@each $colorKey, $color in $colors {
+  .text-#{$colorKey} {
+    color: $color;
+  }
+  .bg-#{$colorKey} {
+    background-color: $color;
+  }
+}
+
+@each $fontSizeKey, $font-size in $font-sizes {
+  .fz-#{$fontSizeKey} {
+    font-size: $font-size;
+  }
+}
+
+@each $typeKey, $type in $spacing-types {
+  //m-0
+  @each $sizeKey, $size in $spacing-sizes {
+    .#{$typeKey}-#{$sizeKey} {
+      #{$type}: $size * $spacing-base-size;
+    }
+  }
+  //mx-0
+  @each $sizeKey, $size in $spacing-sizes {
+    .#{$typeKey}x-#{$sizeKey} {
+      #{$type}-left: $size * $spacing-base-size;
+      #{$type}-right: $size * $spacing-base-size;
+    }
+  }
+  //my-0
+  @each $sizeKey, $size in $spacing-sizes {
+    .#{$typeKey}y-#{$sizeKey} {
+      #{$type}-top: $size * $spacing-base-size;
+      #{$type}-bottom: $size * $spacing-base-size;
+    }
+  }
+  //mt-0,mb-0,ml-0,mr-0
+  @each $dirKey, $dir in $spacing-direction {
+    @each $sizeKey, $size in $spacing-sizes {
+      .#{$typeKey}#{$dirKey}-#{$sizeKey} {
+        #{$type}-#{$dir}: $size * $spacing-base-size;
+      }
+    }
+  }
 }

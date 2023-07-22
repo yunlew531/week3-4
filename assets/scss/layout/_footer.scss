@@ -1,4 +1,27 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  .footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icons-list {
+    display: flex;
+    .icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .footer-main {
+    border-bottom: 1px solid $white;
+    .contact-link {
+      display: flex;
+    }
+  }
+  .footer-footer {
+    display: flex;
+    justify-content: space-between;
+    .policy-group {
+      display: flex;
+    }
+  }
 }
