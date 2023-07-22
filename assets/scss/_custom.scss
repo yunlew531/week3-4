@@ -7,10 +7,12 @@ $primary: #AA0601;
 $white: #fff;
 $black: #000;
 $black_100: #212529;
+$black_200: #00000029;
 $red_100: #9F1213;
 $red_200: #650300;
 $red_300: #FBF2F2;
 $gray_100: #707070;
+$gray_200: #DEE2E6;
 
 $container-width: 1320px;
 $container-padding: 12px;
@@ -24,6 +26,7 @@ $colors: (
   "red_200": $red_200,
   "red_300": $red_300,
   "gray_100": $gray_100,
+  "gray_200": $gray_200,
 );
 
 $font-sizes: (
