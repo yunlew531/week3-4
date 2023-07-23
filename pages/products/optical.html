@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+
+  <div class="optical-wrap">
+    <div class="products-nav-section container">
+      <%- include('./components/products-nav', {active: 'optical'}) -%>
+    </div>
+
+    <div class="imgs-section mb-20">
+      <%- include('./components/imgs-banner', {imgs: ['../../assets/images/product-header-1.png', '../../assets/images/product-header-2.png']}) -%>
+    </div>
+
+    <h2 class="subtitle fz-42">Celluloid Combi</h2>
+    <h1 class="title fz-32 mb-8">賽璐珞鈦金屬混合鏡框</h1>
+  
+    <div class="products-section container">
+      <%- include('./components/products-list', {perRow: 4, products: [{title: 'BJ41600S', src :'../../assets/images/product-1.png'}, {title: 'BJ41600T', src: '../../assets/images/product-2.png'}, {title: 'BJ41600U', src: '../../assets/images/product-3.png'}, {title: 'BJ41600V', src: '../../assets/images/product-4.png'}, {title: 'BJ41600W', src: '../../assets/images/product-5.png'}, {title: 'BJ41600X', src: '../../assets/images/product-6.png'}, {title: 'BJ41600Y', src: '../../assets/images/product-7.png'}, {title: 'BJ41600Z', src: '../../assets/images/product-8.png'}, {title: 'BJ41600A', src: '../../assets/images/product-9.png'}, {title: 'BJ41600B', src: '../../assets/images/product-10.png'}, {title: 'BJ41600C', src: '../../assets/images/product-11.png'}, {title: 'BJ41600D', src: '../../assets/images/product-12.png'}]}) -%>
+    </div>
+  
+    <div class="pagination-section mb-20">
+      <%- include('./components/pagination'); -%>
+    </div>
+  </div>
+
+  <%- include('./layout/footer'); -%>
+  
+  <script src="../../main.js" type="module"></script>
+</body>
+</html>

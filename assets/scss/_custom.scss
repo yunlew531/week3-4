@@ -13,6 +13,10 @@ $red_200: #650300;
 $red_300: #FBF2F2;
 $gray_100: #707070;
 $gray_200: #DEE2E6;
+$gray_300: #555555;
+$gray_400: #F2F2F2;
+$brown_100: #5F3E2D;
+$brown_200: #B75929;
 
 $container-width: 1320px;
 $container-padding: 12px;
@@ -27,17 +31,23 @@ $colors: (
   "red_300": $red_300,
   "gray_100": $gray_100,
   "gray_200": $gray_200,
+  "gray_300": $gray_300,
+  "gray_400": $gray_400,
+  "brown_100": $brown_100,
+  "brown_200": $brown_200,
 );
 
 $font-sizes: (
-  "1": 64px,
-  "2": 48px,
-  "3": 36px,
-  "4": 24px,
-  "5": 20px,
-  "6": 18px,
-  "7": 16px,
-  "8": 14px,
+  "64": 64px,
+  "48": 48px,
+  "42": 42px,
+  "36": 36px,
+  "32": 32px,
+  "24": 24px,
+  "20": 20px,
+  "18": 18px,
+  "16": 16px,
+  "14": 14px,
 );
 
 $spacing-types: (

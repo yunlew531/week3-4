@@ -1,0 +1,20 @@
+.optical-wrap, .sunglasses-wrap {
+  .products-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-left: 1px solid $gray_200;
+    .products-nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 33.333%;
+      text-align: center;
+      text-transform: uppercase;
+      border-right: 1px solid $gray_200;
+      &.active {
+        border-bottom: 8px solid $primary;
+      } 
+    }
+  }
+}

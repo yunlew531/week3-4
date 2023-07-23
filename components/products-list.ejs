@@ -1,0 +1,15 @@
+<ul class="products-list <%- perRow==4 && 'four-per-row'; %> <%- perRow==3 && 'three-per-row'; %>">
+  <% products.map((product) => { %>
+    <li class="product-item mb-20">
+      <img class="product-item-img" src="<%= product.src %>" alt="BJ41600S">
+      <div class="product-item-main fz-24">
+        <h3><%= product.title %><h3>
+        <p class="text-primary">NTD3,490</p>
+      </div>
+      <div class="color-group">
+        <div class="color bg-brown_100 mr-2"></div>
+        <div class="color bg-brown_200"></div>
+      </div>
+    </li>
+  <% }) %>
+</ul>

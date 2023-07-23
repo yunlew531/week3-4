@@ -5,6 +5,13 @@
 // components
 @import './layout/header.scss';
 @import './layout/footer.scss';
+@import './components/products-nav.scss';
+@import './components/products-list.scss';
+@import './components/imgs-banner.scss';
+@import './components/pagination.scss';
+@import './components/page-title.scss';
 
 // page
 @import './pages/index.scss';
+@import './pages/optical.scss';
+@import './pages/sunglasses.scss';

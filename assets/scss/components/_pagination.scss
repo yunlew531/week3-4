@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  .page-btn {
+    background: $white;
+    border: 1px solid $gray_300;
+    margin-right: -1px;
+    &.active {
+      background: $black;
+      color: $white;
+    }
+    &:hover {
+      filter: brightness(.95);
+    }
+    &:active {
+      filter: brightness(.9);
+    }
+  }
+  .next-page-btn {
+    background: $gray_400;
+  }
+}

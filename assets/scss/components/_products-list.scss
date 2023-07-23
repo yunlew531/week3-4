@@ -1,0 +1,30 @@
+.products-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &.three-per-row {
+    .product-item {
+      width: 32%;
+    }
+  }
+  &.four-per-row {
+    .product-item {
+      width: 23.61%;
+    }
+  }
+  .product-item-img {
+    height: 224px;
+  }
+  .product-item-main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .color-group {
+    display: flex;
+    .color {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+  }
+}
