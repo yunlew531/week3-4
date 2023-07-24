@@ -1,7 +1,9 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   line-height: 1.5;
 }
+
+$font-roboto: "'Roboto', sans-serif";
 
 $primary: #AA0601;
 $white: #fff;
@@ -103,8 +105,16 @@ $spacing-sizes: (
   }
 }
 
+.font-roboto {
+  font-family: $font-roboto;
+}
+
 .fw-bold {
   font-weight: bold;
+}
+
+.fw-900 {
+ font-weight: 900;
 }
 
 @each $colorKey, $color in $colors {

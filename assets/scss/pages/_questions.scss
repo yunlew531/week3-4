@@ -1,5 +1,11 @@
 .questions-wrap {
+  @include tablet {
+    padding-top: 80px;
+  }
   .questions-list {
     width: 66.049%;
+    @include tablet {
+      width: 100%;
+    }
   }
 }
