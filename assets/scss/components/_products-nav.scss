@@ -1,4 +1,9 @@
 .optical-wrap, .sunglasses-wrap {
+  .products-nav-section {
+    @include tablet {
+      padding: 0;
+    }
+  }
   .products-nav {
     display: flex;
     justify-content: space-between;
