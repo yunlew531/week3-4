@@ -7,5 +7,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .header-nav {
+      a {
+        transition: filter .1s ease-in;
+        &:hover {
+          filter: brightness(0.8);
+        }
+        &:active {
+          filter: brightness(0.7);
+        }
+      }
+    }
   }
 } 
