@@ -1,18 +1,22 @@
 .products-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin-right: -24px;
+  .product-item {
+    margin-right: 24px;
+  }
   &.three-per-row {
     .product-item {
-      width: 32%;
+      width: calc(33.333% - 24px);
     }
   }
   &.four-per-row {
     .product-item {
-      width: 23.61%;
+      width: calc(25% - 24px);
     }
   }
   .product-item-img {
+    width: 100%;
     height: 224px;
   }
   .product-item-main {

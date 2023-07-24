@@ -1,0 +1,28 @@
+.locations-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -24px;
+  .location-item {
+    width: calc(33.333% - 24px);
+    margin-right: 24px;
+    .location-item-img {
+      width: 100%;
+      height: 224px;
+    }
+    .location-item-title, .location-item-main {
+      border: 1px solid $gray_600;
+    }
+    .location-item-phone {
+      display: flex;
+      align-items: center;
+    }
+    .location-item-text-group {
+      display: flex;
+    }
+    .location-detail-link {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

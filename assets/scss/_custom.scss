@@ -15,6 +15,8 @@ $gray_100: #707070;
 $gray_200: #DEE2E6;
 $gray_300: #555555;
 $gray_400: #F2F2F2;
+$gray_500: #495057;
+$gray_600: #00000020;
 $brown_100: #5F3E2D;
 $brown_200: #B75929;
 
@@ -26,6 +28,7 @@ $colors: (
   "white": $white,
   "black": $black,
   "black_100": $black_100,
+  "black_200": $black_200,
   "red_100": $red_100,
   "red_200": $red_200,
   "red_300": $red_300,
@@ -33,6 +36,8 @@ $colors: (
   "gray_200": $gray_200,
   "gray_300": $gray_300,
   "gray_400": $gray_400,
+  "gray_500": $gray_500,
+  "gray_600": $gray_600,
   "brown_100": $brown_100,
   "brown_200": $brown_200,
 );

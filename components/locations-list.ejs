@@ -1,0 +1,23 @@
+<ul class="locations-list">
+  <% locations.map(location => { %>
+    <li class="location-item text-black_100 mb-12">
+      <img class="location-item-img" src="<%= location.image -%>" alt="<%= location.title -%>">
+      <h2 class="location-item-title fz-24 px-6 py-2"><%= location.title -%></h2>
+      <div class="location-item-main fz-20 px-6 py-2">
+        <a class="location-item-text-group text-black_100 mb-2" href="tel:+88620001234">
+          <span class="material-icons-outlined mr-2">call</span>
+          <span>電話：<%= location.phone -%></span>
+        </a>
+        <p class="location-item-text-group mb-2">
+          <span class="material-icons-outlined mr-2">schedule</span>
+          <span><%= location.time -%></span>
+        </p>
+        <p class="location-item-text-group mb-4">
+          <span class="material-icons-outlined mr-2">location_on</span>
+          <span><%= location.address -%></span>
+        </p>
+      </div>
+      <a href="/week3-4/pages/location.html" class="location-detail-link fz-20 bg-black text-white py-4">詳細資訊</a>
+    </li>
+  <% }) %>
+</ul>
