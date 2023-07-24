@@ -21,7 +21,7 @@ $brown_100: #5F3E2D;
 $brown_200: #B75929;
 
 $container-width: 1320px;
-$container-padding: 12px;
+$container-padding-x: 12px;
 
 $colors: (
   "primary": $primary,
@@ -88,13 +88,14 @@ $spacing-sizes: (
   20: 5,
   24: 6,
   25: 6.25,
+  32: 8,
   38: 9.5,
   50: 12.5
 );
 
 .container {
   max-width: $container-width;
-  padding: 0 $container-padding;
+  padding: 0 $container-padding-x;
   margin: 0 auto;
 }
 

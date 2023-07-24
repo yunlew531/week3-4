@@ -1,0 +1,25 @@
+.blog-wrap {
+  .articles-list {
+    .article-item {
+      display: flex;
+      .article-img {
+        width: 49.074%;
+      }
+      .article-main {
+        display: flex;
+        flex-direction: column;
+      }
+      .article-text {
+        flex-grow: 1;
+      }
+      .article-link {
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+  }
+  .pagination-section {
+    display: flex;
+    justify-content: center;
+  }
+}
