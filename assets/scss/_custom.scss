@@ -98,6 +98,9 @@ $spacing-sizes: (
   max-width: $container-width;
   padding: 0 $container-padding-x;
   margin: 0 auto;
+  @include tablet {
+    padding: 0 36px
+  }
 }
 
 .fw-bold {
