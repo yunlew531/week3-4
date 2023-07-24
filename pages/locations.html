@@ -8,19 +8,17 @@
 <body>
   <%- include('./layout/header'); -%>
 
-  <div class="locations-wrap pt-24">
+  <div class="locations-wrap pt-24 pb-20">
     <div class="container">
       <div class="mb-8">
         <%- include('./components/page-title', {title: '門市據點'}); -%>
       </div>
 
-      <div class="mb-8">
+      <div class="select-group-panel mb-8">
         <%- include('./components/select-group', {title: '選擇地區', options: ['台北市', '台中市', '高雄市']}) -%>
       </div>
 
-      <div class="mb-8">
-        <%- include('./components/locations-list', {locations: [{title: '台北中山旗艦店', phone: '(02)000-1234', time: '10:00-21:00', address: '台北市中山區南京東路25巷2-1號', image: '../assets/images/store-1.png'}, {title: '台北綠園店', phone: '(02)000-2345', time: '10:00-21:00', address: '台北市中正區復興南路 132-1 號', image: '../assets/images/store-2.png'}, {title: '台中清水旗艦店', phone: '(04)000-1234', time: '10:00-21:00', address: '台中市清水區經南一路 23 號 8 樓', image: '../assets/images/store-3.png'}, {title: '高雄中正形象店', phone: '(07)000-2345', time: '10:00-21:00', address: '高雄市苓雅區中正路 38 號 12 樓', image: '../assets/images/store-4.png'}, {title: '高雄夢時代店', phone: '(07)000-1234', time: '10:00-21:00', address: '高雄市前鎮區中華一路 63 號 6 樓', image: '../assets/images/store-5.png'}]}) -%>
-      </div>
+      <%- include('./components/locations-list', {locations: [{title: '台北中山旗艦店', phone: '(02)000-1234', time: '10:00-21:00', address: '台北市中山區南京東路25巷2-1號', image: '../assets/images/store-1.png'}, {title: '台北綠園店', phone: '(02)000-2345', time: '10:00-21:00', address: '台北市中正區復興南路 132-1 號', image: '../assets/images/store-2.png'}, {title: '台中清水旗艦店', phone: '(04)000-1234', time: '10:00-21:00', address: '台中市清水區經南一路 23 號 8 樓', image: '../assets/images/store-3.png'}, {title: '高雄中正形象店', phone: '(07)000-2345', time: '10:00-21:00', address: '高雄市苓雅區中正路 38 號 12 樓', image: '../assets/images/store-4.png'}, {title: '高雄夢時代店', phone: '(07)000-1234', time: '10:00-21:00', address: '高雄市前鎮區中華一路 63 號 6 樓', image: '../assets/images/store-5.png'}]}) -%>
     </div>
   </div>
   

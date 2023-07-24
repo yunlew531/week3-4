@@ -1,0 +1,8 @@
+.locations-wrap {
+  @include tablet {
+    padding-top: 80px;
+    .select-group-panel {
+      margin-bottom: 40px;
+    }
+  }
+}

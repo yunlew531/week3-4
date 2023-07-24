@@ -1,3 +1,6 @@
 .page-title {
   border-left: 8px solid $red_100; 
+  @include tablet {
+    font-size: 48px;
+  }
 }
