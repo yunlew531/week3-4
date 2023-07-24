@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+
+  <div class="location-wrap pt-24 pb-20">
+    <div class="container">
+      <div class="mb-8">
+        <%- include('./components/page-title', {title: '門市據點'}); -%>
+      </div>
+
+      <div class="mb-10">
+        <%- include('./components/select-group', {title: '選擇分店', options: ['台北中山旗艦店', '台北綠園店', '台中清水旗艦店', '高雄中正形象店', '高雄夢時代店']}); -%>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+</body>
+</html>
