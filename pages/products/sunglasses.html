@@ -15,10 +15,10 @@
 
     <div class="imgs-section mb-20">
       <div class="imgs-section-pc">
-        <%- include('./components/imgs-banner', {imgs: ['../../assets/images/product-header-3.png', '../../assets/images/product-header-4.png']}) -%>
+        <%- include('./components/imgs-banner', {imgs: ['/assets/images/product-header-3.png', '/assets/images/product-header-4.png']}) -%>
       </div>
       <div class="imgs-section-tablet">
-        <%- include('./components/imgs-banner', {imgs: ['../../assets/images/product-header-sm-3.png', '../../assets/images/product-header-sm-4.png']}) -%>
+        <%- include('./components/imgs-banner', {imgs: ['/assets/images/product-header-sm-3.png', '/assets/images/product-header-sm-4.png']}) -%>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
     <h1 class="title fz-32 mb-8">賽璐珞鈦金屬混合鏡框</h1>
   
     <div class="products-section container mb-20">
-      <%- include('./components/products-list', {perRow: 3, products: [{title: 'BJ41600S', src :'../../assets/images/product-1.png'}, {title: 'BJ41600T', src: '../../assets/images/product-2.png'}, {title: 'BJ41600U', src: '../../assets/images/product-3.png'}, {title: 'BJ41600V', src: '../../assets/images/product-4.png'}, {title: 'BJ41600W', src: '../../assets/images/product-5.png'}, {title: 'BJ41600X', src: '../../assets/images/product-6.png'}]}) -%>
+      <%- include('./components/products-list', {perRow: 3, products: [{title: 'BJ41600S', src :'/assets/images/product-1.png'}, {title: 'BJ41600T', src: '/assets/images/product-2.png'}, {title: 'BJ41600U', src: '/assets/images/product-3.png'}, {title: 'BJ41600V', src: '/assets/images/product-4.png'}, {title: 'BJ41600W', src: '/assets/images/product-5.png'}, {title: 'BJ41600X', src: '/assets/images/product-6.png'}]}) -%>
     </div>
   
     <div class="pagination-section mb-20">
@@ -36,6 +36,6 @@
 
   <%- include('./layout/footer'); -%>
   
-  <script src="../../main.js" type="module"></script>
+  <script src="/main.js" type="module"></script>
 </body>
 </html>
