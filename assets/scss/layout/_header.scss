@@ -19,4 +19,26 @@
       }
     }
   }
+  @include phone {
+    padding: 0;
+    .header-container {
+      display: block;
+      padding: 0;
+      .logo-link {
+        display: block;
+        padding: 16px;
+      }
+      .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+          border: 1px solid $white;
+          padding: 12px;
+          text-align: center;
+          width: 50%;
+          margin: 0;
+        }
+      }
+    }
+  }
 } 

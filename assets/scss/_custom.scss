@@ -103,6 +103,9 @@ $spacing-sizes: (
   @include tablet {
     padding: 0 36px
   }
+  @include phone {
+    padding: 0 12px
+  }
 }
 
 .font-roboto {
