@@ -1,8 +1,21 @@
 .locations-wrap {
+  .select-group {
+    display: flex;
+    align-items: center;
+  }
   @include tablet {
     padding-top: 80px;
     .select-group-panel {
       margin-bottom: 40px;
+    }
+  }
+  @include phone {
+    padding: 40px 0 64px;
+    .title-section {
+      margin-bottom: 24px;
+    }
+    .select-group-panel {
+      margin-bottom: 24px;
     }
   }
 }

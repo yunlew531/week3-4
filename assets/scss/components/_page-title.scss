@@ -3,4 +3,7 @@
   @include tablet {
     font-size: 48px;
   }
+  @include phone {
+    font-size: 24px;
+  }
 }

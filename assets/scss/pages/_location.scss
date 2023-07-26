@@ -1,24 +1,12 @@
 .location-wrap {
-  @include tablet {
-    padding-top: 80px;
-  }
   .location-main {
     display: flex;
     flex-wrap: wrap;
     .location-card {
       width: 40.586%;
-      @include tablet {
-        width: 100%;
-        display: flex;
-        margin: 0 0 24px;
-      }
       .location-card-img {
         width: 100%;
         height: 224px;
-        @include tablet {
-          width: 337px;
-          margin-right: 24px;
-        }
       }
       .location-card-title, .location-card-main {
         border: 1px solid $gray_600;
@@ -41,8 +29,40 @@
       iframe {
         width: 100%;
         height: 100%;
-        @include tablet {
+      }
+    }
+  }
+  @include tablet {
+    padding-top: 80px;
+    .location-main {
+      .location-card {
+        width: 100%;
+        display: flex;
+        margin: 0 0 24px;
+        .location-card-img {
+          width: 337px;
+          margin-right: 24px;
+        }
+      }
+      .google-map {
+        iframe {
           height: 414px;
+        }
+      }
+    }
+  }
+  @include phone {
+    padding: 40px 0 64px;
+    .location-main {
+      .location-card {
+        display: block;
+        .location-card-img {
+          width: 100%;
+        }
+      }
+      .google-map {
+        iframe {
+          height: 208px;
         }
       }
     }

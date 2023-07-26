@@ -4,4 +4,10 @@
   select {
     flex-grow: 1;
   }
+  @include phone {
+    width: inherit;
+    .select-group-title {
+      font-size: 16px;
+    }
+  }
 }
