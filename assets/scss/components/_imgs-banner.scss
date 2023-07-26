@@ -2,6 +2,9 @@
   display: flex;
   .img-item {
     width: 50%;
+    img {
+      width: 100%;
+    }
   }
   .banner-img {
     height: 296px;
