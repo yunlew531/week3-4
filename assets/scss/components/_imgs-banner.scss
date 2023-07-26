@@ -6,4 +6,9 @@
   .banner-img {
     height: 296px;
   }
+  @include phone {
+    .banner-img {
+      height: 136px;
+    }
+  }
 } 

@@ -1,9 +1,4 @@
 .optical-wrap, .sunglasses-wrap {
-  .products-nav-section {
-    @include tablet {
-      padding: 0;
-    }
-  }
   .products-nav {
     display: flex;
     justify-content: space-between;
@@ -20,6 +15,18 @@
       &.active {
         border-bottom: 8px solid $primary;
       } 
+    }
+  }
+  @include tablet {
+    .products-nav-section {
+      padding: 0;
+    }
+  }
+  @include phone {
+    .products-nav {
+      .products-nav-link {
+        font-size: 16px;
+      }
     }
   }
 }

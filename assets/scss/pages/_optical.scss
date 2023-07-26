@@ -6,15 +6,29 @@
     display: flex;
     justify-content: center;
   }
-  .imgs-section {
-    @include tablet {
-      display: none;
-    }
-  }
   .imgs-section-tablet {
     display: none;
-    @include tablet {
+  }
+  @include tablet {
+    .imgs-section {
+      display: none;
+    }
+    .imgs-section-tablet {
       display: block;
-    }   
+    }
+  }
+  @include phone {
+    .imgs-section-tablet {
+      margin-bottom: 40px;
+    }
+    .title, .subtitle {
+      font-size: 24px;
+    }
+    .products-section {
+      margin-bottom: 64px;
+    }
+    .pagination-section {
+      margin-bottom: 64px;
+    }
   }
 }
