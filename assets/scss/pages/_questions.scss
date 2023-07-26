@@ -1,11 +1,24 @@
 .questions-wrap {
-  @include tablet {
-    padding-top: 80px;
-  }
   .questions-list {
     width: 66.049%;
-    @include tablet {
+  }
+  @include tablet {
+    padding-top: 80px;
+    .questions-list {
       width: 100%;
+    }
+  }
+  @include phone {
+    padding: 40px 0 64px;
+    .title-section {
+      margin-bottom: 24px;
+    }
+    .questions-list {
+      .question-item {
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
     }
   }
 }
