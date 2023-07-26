@@ -8,7 +8,7 @@
 <body>
   <%- include('./layout/header'); -%>
 
-  <div class="blog-wrap">
+  <div class="blog-wrap pb-20">
     <div class="article-nav-container mb-24">
       <%- include('./components/article-nav') -%>
     </div>
@@ -19,7 +19,7 @@
       </div>
 
       <ul class="articles-list mb-32">
-        <li class="article-item mr-6 mb-16" onclick="go('/week3-4/pages/article.html')">
+        <li class="article-item mb-16" onclick="go('/week3-4/pages/article.html')">
           <img class="article-img mr-6" src="../assets/images/blog-1.png" alt="valentines special">
           <div class="article-main">
             <h2 class="text-red_200 fz-32">情人特別企劃</h2>
@@ -82,7 +82,7 @@
       </ul>
     </div>
 
-    <div class="pagination-section container mb-20">
+    <div class="pagination-section container">
       <%- include('./components/pagination') -%>
     </div>
   </div>
