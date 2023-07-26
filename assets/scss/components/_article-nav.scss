@@ -24,4 +24,15 @@
       transform: scale(0.97);
     }
   }
+  @include phone {
+    a {
+      font-size: 16px;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    .search-btn {
+      display: none;
+    }
+  }
 }
