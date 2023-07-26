@@ -20,6 +20,16 @@
       background: url(../images/home-header-sm.png) no-repeat center;
       background-size: cover;
     }
+    @include phone {
+      padding: 144px 0;
+      .banner-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+      .banner-subtitle {
+        font-size: 16px;
+      }
+    }
   }
 
   .intro-section {
@@ -48,8 +58,20 @@
         }
       }
       @include phone {
+        .intro-item {
+          width: 100%;
+          margin-bottom: 32px;
+        }
         margin-right: 0;
       }
+    }
+  }
+  @include phone {
+    .intro-section {
+      padding: 40px 0;
+    }
+    .section-title {
+      font-size: 24px;
     }
   }
 }
@@ -84,6 +106,9 @@
       }
     }
   }
+  @include phone {
+    padding: 40px 0;
+  }
 }
 
 .collaborative-section {
@@ -111,6 +136,22 @@
         }
       }
     }
+    .collaborative-item-img-1 {
+      background: url(../images/home-section4-1.png) no-repeat center;
+      @include phone {
+        background: url(../images/home-section4-1-sm.png) no-repeat center;
+      }
+    }
+    .collaborative-item-img-2 {
+      background: url(../images/home-section4-2.png) no-repeat center;
+      @include phone {
+        background: url(../images/home-section4-2-sm.png) no-repeat center;
+      }
+    }
+    .collaborative-item-img {
+      height: 240px;
+      background-size: cover;
+    }
   }
   @include tablet {
     background: url(../images/index-bg-sm.png) no-repeat center;
@@ -120,6 +161,9 @@
         width: 100%;
       } 
     }
+  }
+  @include phone {
+    padding: 40px 0;
   }
 }
 
@@ -132,8 +176,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 -24px -24px 0;
-    @include phone {
+    @include tablet {
       margin-right: 0;
+    }
+    @include tablet {
+      margin-bottom: -16px;
     }
     .recommended-item {
       display: flex;
@@ -148,6 +195,10 @@
       @include tablet {
         width: calc(50% - 24px);
       }
+      @include phone {
+        width: 100%;
+        margin: 0 0 16px;
+      }
     }
     .recommended-item-main {
       flex-grow: 1;
@@ -157,6 +208,13 @@
     .recommended-item-text {
       flex-grow: 1;
       min-height: 112px;
+    }
+  }
+  @include phone {
+    padding: 40px 0;
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 24px;
     }
   }
 }
@@ -192,7 +250,6 @@
     }
     .policy-group {
       display: flex;
-      align-items: end;
       input[type="checkbox"] {
         width: 20px;
         height: 20px;
@@ -204,6 +261,15 @@
       width: 100%;
       border: none;
       margin: 0 auto;
+    }
+  }
+  @include phone {
+    padding: 40px 0;
+    .section-title {
+      font-size: 24px;
+    }
+    textarea {
+      height: 136px;
     }
   }
 }
